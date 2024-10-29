@@ -11,11 +11,12 @@ namespace LarreaPaul_ExamenP1.Models
         [MinLength(3)]
         public string Modelo { get; set; }
         [MaxLength(4)]
+
         public int año { get; set; }
         [Range(20, 50000)]
         public float precio { get; set; }
         public PLarrea? cliente { get; set; }
         [ForeignKey("PLarrea")]
-        public int IdEquipo { get; set; }
+        public int IdCliente { get; set; }
     }
 }

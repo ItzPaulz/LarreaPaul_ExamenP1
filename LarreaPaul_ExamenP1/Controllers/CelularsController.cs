@@ -54,7 +54,7 @@ namespace LarreaPaul_ExamenP1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Modelo,año,precio,IdEquipo")] Celular celular)
+        public async Task<IActionResult> Create([Bind("Id,Modelo,año,precio,IdCliente")] Celular celular)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace LarreaPaul_ExamenP1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Modelo,año,precio,IdEquipo")] Celular celular)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Modelo,año,precio,IdCliente")] Celular celular)
         {
             if (id != celular.Id)
             {
