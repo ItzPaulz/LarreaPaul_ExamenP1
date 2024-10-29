@@ -10,11 +10,11 @@ namespace LarreaPaul_ExamenP1.Models
         [EmailAddress]
         public string correo { get; set; }
         [Required]
-        [MinLength(9)]
-        [Phone]
+        
+        
         public int celular { get; set; }
-        [MaxLength(3)]
-        public float iq { get; set; }
+        [Range(1,100000)]
+        public float sueldo { get; set; }
         [Required]
         public bool casado { get; set; }
         [DataType(DataType.Date)]

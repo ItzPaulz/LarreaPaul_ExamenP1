@@ -4,6 +4,7 @@ using LarreaPaul_ExamenP1.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LarreaPaul_ExamenP1.Migrations
 {
     [DbContext(typeof(LarreaPaul_ExamenP1Context))]
-    partial class LarreaPaul_ExamenP1ContextModelSnapshot : ModelSnapshot
+    [Migration("20241029132909_MigracionDef")]
+    partial class MigracionDef
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
